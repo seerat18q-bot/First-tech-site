@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Media Space</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+
+    <header>
+
+        <div class="heading">
+
+            <p class="small-title">MY MEDIA SPACE</p>
+
+            <h1>Moments in<br>Motion</h1>
+
+            <p class="intro">
+                A collection of images, sounds and videos
+                presented through an interactive webpage.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- Featured Image -->
+
+    <section class="featured">
+
+        <div class="featured-text">
+
+            <p class="label">FEATURED IMAGE</p>
+
+            <h2>Explore the Gallery</h2>
+
+            <p>
+                Click any image below to change the
+                featured sketch.
+            </p>
+
+        </div>
+
+
+        <div class="featured-image">
+
+            <img id="mainImage"
+                 src="media/image1.jpg"
+                 alt="Featured sketch">
+
+        </div>
+
+    </section>
+
+
+    <!-- Image Gallery -->
+
+    <section class="gallery-section">
+
+        <div class="section-heading">
+
+            <h2>Image Collection</h2>
+
+            <p>Select an image to view it above.</p>
+
+        </div>
+
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+
+                <img src="Octopus.jpg"
+                     onclick="changeImage(this.src)"
+                     alt="Gallery image 1">
+
+                <p>Sketch One</p>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img src="Fox&Bird.jpg"
+                     onclick="changeImage(this.src)"
+                     alt="Gallery image 2">
+
+                <p>Sketch Two</p>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img src="Cow.jpg"
+                     onclick="changeImage(this.src)"
+                     alt="Gallery image 3">
+
+                <p>Sketch Three</p>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="Horse.jpg"
+                     onclick="changeImage(this.src)"
+                     alt="Gallery image 3">
+
+                <p>Sketch Four</p>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="Dog.jpg"
+                     onclick="changeImage(this.src)"
+                     alt="Gallery image 3">
+
+                <p>Sketch Five</p>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="Bird.jpg"
+                     onclick="changeImage(this.src)"
+                     alt="Gallery image 3">
+
+                <p>Sketch Six</p>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="Cat.jpg"
+                     onclick="changeImage(this.src)"
+                     alt="Gallery image 3">
+
+                <p>Sketch Seven</p>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="Fish.jpg"
+                     onclick="changeImage(this.src)"
+                     alt="Gallery image 3">
+
+                <p>Sketch Eight</p>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="Bee.jpg"
+                     onclick="changeImage(this.src)"
+                     alt="Gallery image 3">
+
+                <p>Sketch Nine</p>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img src="Jaguar.jpg"
+                     onclick="changeImage(this.src)"
+                     alt="Gallery image 3">
+
+                <p>Sketch Ten</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<!-- Slideshow Section -->
+
+<section class="slideshow-section">
+
+    <div class="section-heading">
+
+        <p class="label">MOMENTS IN MOTION</p>
+
+        <h2>Featured Slideshow</h2>
+
+        <p>Take a look through our featured sketches.</p>
+
+    </div>
+
+
+    <div class="slideshow-card">
+
+        <div class="slideshow">
+
+            <div class="slide fade">
+                <img src="Bee.jpg" alt="Sketch One">
+            </div>
+
+            <div class="slide fade">
+                <img src="Bird.jpg" alt="Sketch Two">
+            </div>
+
+            <div class="slide fade">
+                <img src="Cat.jpg" alt="Sketch Three">
+            </div>
+
+             <div class="slide fade">
+                <img src="Cow.jpg" alt="Sketch Four">
+            </div>
+
+             <div class="slide fade">
+                <img src="Dog.jpg" alt="Sketch Five">
+            </div>
+
+             <div class="slide fade">
+                <img src="Fish.jpg" alt="Sketch Six">
+            </div>
+
+             <div class="slide fade">
+                <img src="Fox&Bird.jpg" alt="Sketch Seven">
+            </div>
+
+             <div class="slide fade">
+                <img src="Horse.jpg" alt="Sketch Eight">
+            </div>
+
+             <div class="slide fade">
+                <img src="Jaguar.jpg" alt="Sketch Nine">
+            </div>
+
+             <div class="slide fade">
+                <img src="Octopus.jpg" alt="Sketch Ten">
+            </div>
+
+
+            <button class="prev" onclick="changeSlide(-1)">
+                &#10094;
+            </button>
+
+            <button class="next" onclick="changeSlide(1)">
+                &#10095;
+            </button>
+
+        </div>
+
+
+       
+
+    </div>
+
+
+    <div class="dots">
+
+        <span class="dot" onclick="currentSlide(1)"></span>
+
+        <span class="dot" onclick="currentSlide(2)"></span>
+
+        <span class="dot" onclick="currentSlide(3)"></span>
+
+        <span class="dot" onclick="currentSlide(4)"></span>
+
+        <span class="dot" onclick="currentSlide(5)"></span>
+
+        <span class="dot" onclick="currentSlide(6)"></span>
+
+        <span class="dot" onclick="currentSlide(7)"></span>
+
+        <span class="dot" onclick="currentSlide(8)"></span>
+
+        <span class="dot" onclick="currentSlide(9)"></span>
+
+        <span class="dot" onclick="currentSlide(10)"></span>
+
+    </div>
+
+</section>
+
+
+    <!-- Audio and Video -->
+
+    <section class="media-section">
+
+        <div class="media-card">
+
+            <div class="icon">♫</div>
+
+            <p class="label">AUDIO</p>
+
+            <h2>Listen</h2>
+
+            <p>
+                Enjoy the audio tracks included
+                in this multimedia collection.
+            </p>
+
+            <audio controls>
+
+                <source src="Audio1.mp3"
+                        type="audio/mpeg">
+
+                Your browser does not support audio.
+
+            </audio>
+
+            <audio controls>
+
+                <source src="Chillpeach - Cake.mp3"
+                        type="audio/mpeg">
+
+                Your browser does not support audio.
+
+            </audio>
+
+        </div>
+
+
+        <div class="media-card">
+
+            <div class="icon">▶</div>
+
+            <p class="label">VIDEO</p>
+
+            <h2>Watch</h2>
+
+            <p>
+                Watch the video and experience
+                the visual side of the collection.
+            </p>
+
+            <video controls>
+
+                <source src="Animals animation.mp4"
+                        type="video/mp4">
+
+                Your browser does not support video.
+
+            </video>
+
+        </div>
+
+        
+
+    </section>
+
+    <!-- Media Cards Section -->
+
+<section class="media-cards-section">
+
+    <div class="section-heading">
+
+        <p class="label">MEDIA COLLECTION</p>
+
+        <h2>Featured Sketches</h2>
+
+        <p>Explore some of the artwork from our collection.</p>
+
+    </div>
+
+
+    <div class="media-cards">
+
+
+        <!-- Card 1 -->
+
+        <div class="media-card-item">
+
+            <img src="Octopus.jpg" alt="Octopus Sketch">
+
+            <div class="media-card-content">
+
+                <p class="card-number">01</p>
+
+                <h3>Octopus</h3>
+
+                <p>
+                    A detailed sketch capturing the
+                    unique form of an octopus.
+                </p>
+
+                <button onclick="showMessage('Octopus')">
+                    Explore
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 2 -->
+
+        <div class="media-card-item">
+
+            <img src="Fox&Bird.jpg" alt="Fox and Bird Sketch">
+
+            <div class="media-card-content">
+
+                <p class="card-number">02</p>
+
+                <h3>Fox & Bird</h3>
+
+                <p>
+                    A creative sketch featuring
+                    two animals together.
+                </p>
+
+                <button onclick="showMessage('Fox & Bird')">
+                    Explore
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 3 -->
+
+        <div class="media-card-item">
+
+            <img src="Cow.jpg" alt="Cow Sketch">
+
+            <div class="media-card-content">
+
+                <p class="card-number">03</p>
+
+                <h3>Cow</h3>
+
+                <p>
+                    A simple animal sketch with
+                    expressive details.
+                </p>
+
+                <button onclick="showMessage('Cow')">
+                    Explore
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 4 -->
+
+        <div class="media-card-item">
+
+            <img src="Horse.jpg" alt="Horse Sketch">
+
+            <div class="media-card-content">
+
+                <p class="card-number">04</p>
+
+                <h3>Horse</h3>
+
+                <p>
+                    A graceful sketch highlighting
+                    the shape of a horse.
+                </p>
+
+                <button onclick="showMessage('Horse')">
+                    Explore
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 5 -->
+
+        <div class="media-card-item">
+
+            <img src="Dog.jpg" alt="Dog Sketch">
+
+            <div class="media-card-content">
+
+                <p class="card-number">05</p>
+
+                <h3>Dog</h3>
+
+                <p>
+                    A playful sketch capturing
+                    the character of a dog.
+                </p>
+
+                <button onclick="showMessage('Dog')">
+                    Explore
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 6 -->
+
+        <div class="media-card-item">
+
+            <img src="Bird.jpg" alt="Bird Sketch">
+
+            <div class="media-card-content">
+
+                <p class="card-number">06</p>
+
+                <h3>Bird</h3>
+
+                <p>
+                    A delicate sketch inspired
+                    by the shape of a bird.
+                </p>
+
+                <button onclick="showMessage('Bird')">
+                    Explore
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>Interactive Media Project</p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+    /* Image Gallery */
+
+    function changeImage(imageSource) {
+
+        document.getElementById("mainImage").src = imageSource;
+
+    }
+
+
+    /* Slideshow */
+
+    let slideIndex = 1;
+
+    showSlides(slideIndex);
+
+
+    function changeSlide(n) {
+
+        showSlides(slideIndex += n);
+
+    }
+
+
+    function currentSlide(n) {
+
+        showSlides(slideIndex = n);
+
+    }
+
+
+    function showSlides(n) {
+
+        let slides = document.getElementsByClassName("slide");
+
+        let dots = document.getElementsByClassName("dot");
+
+
+        if (n > slides.length) {
+
+            slideIndex = 1;
+
+        }
+
+
+        if (n < 1) {
+
+            slideIndex = slides.length;
+
+        }
+
+
+        for (let i = 0; i < slides.length; i++) {
+
+            slides[i].style.display = "none";
+
+        }
+
+
+        for (let i = 0; i < dots.length; i++) {
+
+            dots[i].style.backgroundColor = "#c9c3d1";
+
+        }
+
+
+        slides[slideIndex - 1].style.display = "block";
+
+        dots[slideIndex - 1].style.backgroundColor = "#7652c8";
+
+    }
+
+
+    /* Automatic Slideshow */
+
+    setInterval(function() {
+
+        changeSlide(1);
+
+    }, 3000);
+
+    /* Media Card Interaction */
+
+function showMessage(name) {
+
+    alert("You selected the " + name + " sketch!");
+
+}
+
+</script>
+
+</body>
+
+</html>

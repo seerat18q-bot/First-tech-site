@@ -1,0 +1,753 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f7f3ee;
+
+    color: #29243d;
+
+}
+
+
+/* ---------------- HEADER ---------------- */
+
+header {
+
+    min-height: 350px;
+
+    background-color: #29243d;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 60px 10%;
+
+}
+
+
+.small-title {
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    color: #c7a9ff;
+
+    font-weight: bold;
+
+}
+
+
+.heading h1 {
+
+    font-size: 60px;
+
+    line-height: 1.05;
+
+    margin: 15px 0;
+
+}
+
+
+.intro {
+
+    max-width: 500px;
+
+    line-height: 1.7;
+
+    color: #d8d3e2;
+
+}
+
+
+/* ---------------- FEATURED IMAGE ---------------- */
+
+.featured {
+
+    display: flex;
+
+    gap: 50px;
+
+    align-items: center;
+
+    max-width: 1100px;
+
+    margin: 70px auto;
+
+    padding: 0 30px;
+
+}
+
+
+.featured-text {
+
+    width: 35%;
+
+}
+
+
+.label {
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #7652c8;
+
+    font-weight: bold;
+
+}
+
+
+.featured-text h2 {
+
+    font-size: 35px;
+
+    margin: 15px 0;
+
+}
+
+
+.featured-text p {
+
+    line-height: 1.7;
+
+    color: #6c6875;
+
+}
+
+
+.featured-image {
+
+    width: 65%;
+
+}
+
+
+.featured-image img {
+
+    width: 100%;
+
+    height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(41, 36, 61, 0.18);
+
+}
+
+
+/* ---------------- GALLERY ---------------- */
+
+.gallery-section {
+
+    background-color: white;
+
+    padding: 70px 10%;
+
+}
+
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.section-heading p {
+
+    color: #777;
+
+}
+
+
+/* Gallery Grid */
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+}
+
+
+.gallery-item {
+
+    background-color: #f7f3ee;
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.gallery-item:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+
+}
+
+
+.gallery-item img {
+
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+}
+
+
+.gallery-item p {
+
+    text-align: center;
+
+    font-weight: bold;
+
+    margin: 12px 0 8px;
+
+}
+
+
+/* ---------------- AUDIO + VIDEO ---------------- */
+
+.media-section {
+
+    max-width: 1100px;
+
+    margin: 70px auto;
+
+    padding: 0 30px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+}
+
+
+.media-card {
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+}
+
+
+.icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    background-color: #e9ddff;
+
+    color: #7652c8;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 22px;
+
+}
+
+
+.media-card h2 {
+
+    font-size: 30px;
+
+    margin: 10px 0;
+
+}
+
+
+.media-card p {
+
+    color: #6c6875;
+
+    line-height: 1.6;
+
+}
+
+
+audio {
+
+    width: 100%;
+
+    margin-top: 15px;
+
+}
+
+
+video {
+
+    width: 100%;
+
+    border-radius: 12px;
+
+    margin-top: 10px;
+
+}
+
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+
+    background-color: #29243d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+}
+
+
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+
+@media (max-width: 800px) {
+
+    .heading h1 {
+
+        font-size: 45px;
+
+    }
+
+
+    .featured {
+
+        flex-direction: column;
+
+    }
+
+
+    .featured-text,
+    .featured-image {
+
+        width: 100%;
+
+    }
+
+
+    .gallery {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .media-section {
+
+        grid-template-columns: 1fr;
+
+    }
+}
+
+/* ---------------- SLIDESHOW ---------------- */
+
+.slideshow-section {
+    background-color: #ffffff;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+
+/* Slideshow heading */
+
+.slideshow-section .section-heading {
+    margin-bottom: 35px;
+}
+
+
+/* Outer card */
+
+.slideshow-card {
+    width: 750px;
+    max-width: calc(100% - 40px);
+
+    margin: 0 auto;
+
+    padding: 10px;
+
+    background-color: #f7f3ee;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+
+.slideshow-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Slideshow frame */
+
+.slideshow {
+    width: 100%;
+    height: 400px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+
+/* Individual slides */
+
+.slide {
+    display: none;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Slideshow images */
+
+.slide img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+/* Previous and Next buttons */
+
+.prev,
+.next {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: rgba(41, 36, 61, 0.75);
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    z-index: 5;
+}
+
+
+.prev {
+    left: 15px;
+}
+
+
+.next {
+    right: 15px;
+}
+
+
+.prev:hover,
+.next:hover {
+    background-color: #7652c8;
+}
+
+
+/* Dots */
+
+.dots {
+    margin-top: 20px;
+}
+
+
+.dot {
+    display: inline-block;
+
+    width: 11px;
+    height: 11px;
+
+    margin: 0 5px;
+
+    background-color: #c9c3d1;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.dot:hover {
+    background-color: #7652c8;
+}
+
+
+/* Fade animation */
+
+.fade {
+    animation: fadeEffect 0.8s;
+}
+
+
+@keyframes fadeEffect {
+
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+/* Slideshow responsive design */
+
+@media (max-width: 800px) {
+
+    .slideshow-card {
+        width: calc(100% - 20px);
+        max-width: 750px;
+    }
+
+    .slideshow {
+        height: 300px;
+    }
+
+}
+
+/* ---------------- MEDIA CARDS ---------------- */
+
+.media-cards-section {
+
+    background-color: #f7f3ee;
+
+    padding: 80px 10%;
+
+}
+
+
+/* Cards container */
+
+.media-cards {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+
+/* Individual card */
+
+.media-card-item {
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(41, 36, 61, 0.08);
+
+    transition: 0.3s;
+
+}
+
+
+/* Card hover */
+
+.media-card-item:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(41, 36, 61, 0.15);
+
+}
+
+
+/* Card image */
+
+.media-card-item img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+/* Card content */
+
+.media-card-content {
+
+    padding: 22px;
+
+}
+
+
+/* Card number */
+
+.card-number {
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #7652c8;
+
+    font-weight: bold;
+
+    margin: 0 0 8px;
+
+}
+
+
+/* Card heading */
+
+.media-card-content h3 {
+
+    font-size: 24px;
+
+    margin: 0 0 10px;
+
+    color: #29243d;
+
+}
+
+
+/* Card description */
+
+.media-card-content p:not(.card-number) {
+
+    color: #6c6875;
+
+    line-height: 1.6;
+
+}
+
+
+/* Explore button */
+
+.media-card-content button {
+
+    background-color: #29243d;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    margin-top: 10px;
+
+    transition: 0.3s;
+
+}
+
+
+.media-card-content button:hover {
+
+    background-color: #7652c8;
+
+}
+
+
+/* Responsive cards */
+
+@media (max-width: 800px) {
+
+    .media-cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
